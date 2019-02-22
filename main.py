@@ -33,9 +33,10 @@ print("Multiply " + str(multiply(6, 8)))
 
 
 def power(a, n):
-    for i in range(1, n+1):
-        product = multiply(i, a)
-    return product * product
+    product = 1
+    for i in range(n):
+        product = multiply(product, a)
+    return product
 
 
 print("Power " + str(power(2, 8)))
